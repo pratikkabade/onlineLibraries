@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FullPage & ParticleJS</title>
+
+    <!-- Online Content -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/76637730?v=4">
+    <link rel="stylesheet" href="https://app.staticsave.com/root/root.css">
+    <link rel="stylesheet" href="https://app.staticsave.com/root/noselect.css">
+    <!-- <link rel="stylesheet" href="https://app.staticsave.com/root/tutorial.css"> -->
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./src/fullpage.css">
+    <link rel="stylesheet" href="./src/particle.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<body>
+
+    
+  <nav id="customNav" class="navbar navbar-expand-sm bg-light fixed-top">
+    <div class="container-fluid justify-content-start">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+        <a href="#section1">
+          <img id="hrtLogo" src="https://avatars.githubusercontent.com/u/76637730?v=4" draggable="false" width="50" style="border-radius:50%; filter: brightness(1.2);"/>
+        </a>
+        </li>
+      </ul>
+    </div>
+    <!--<div class="container-fluid justify-content-end">
+      <ul class="navbar-nav">
+        <li data-menuanchor="firstPage" class="nav-item">
+            <a class="nav-link" href="#sect0">One</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">Two</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Three</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Four</a>
+        </li>
+      </ul>
+     </div> -->
+    </nav>
+
+  <!-- <ul id="menu">
+      <li data-menuanchor="firstPage" class="active"><a href="#sect0">First slide</a></li>
+      <li data-menuanchor="secondPage"><a href="#section1">Second slide</a></li>
+      <li data-menuanchor="thirdPage"><a href="#section2">Third slide</a></li>
+      <li data-menuanchor="forthPage"><a href="#section3">Forth slide</a></li>
+  </ul> -->
+
+  <div id="fullpage">
+
+      <div class="section" id="sect0">
+          <div id="particles-js"></div>
+          <h1 class="motionText">Section 1</h1>
+      </div>
+  
+      <div class="section" id="section1">
+          <h1 class="motionText">Section 2</h1>
+      </div>
+  
+      <div class="section" id="section2">
+          <h1 class="motionText">Section 3</h1>
+      </div>
+
+      <div class="section" id="section3">
+          <h1 class="motionText">Section 4</h1>
+      </div>
+
+  </div>
+
+</body> 
+
+    <!-- ParticleJS  -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./src/particle.js"></script>
+
+    <!-- FullPageJs  -->
+    <script src="./src/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'lastPage'],
+            menu: '#menu',
+            slidesNavigation: false,
+            lazyLoad: false,
+            credits: {enabled: false}
+        });
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Awesome Font  -->
+    <script src="https://kit.fontawesome.com/c5266611a7.js" crossorigin="anonymous"></script>
+</html>
